@@ -1,18 +1,18 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+// import {defineConfig} from 'sanity'
+// import {deskTool} from 'sanity/desk'
+// import {visionTool} from '@sanity/vision'
+// import {schemaTypes} from './schemas'
 
-export default defineConfig({
-  name: 'default',
-  title: 'neutram-studio',
+// export default defineConfig({
+//   name: 'default',
+//   title: 'neutram-studio',
 
-  projectId: '8y0fvn0w',
-  dataset: 'production',
+//   projectId: '8y0fvn0w',
+//   dataset: 'production',
 
-  plugins: [deskTool(), visionTool()],
+//   plugins: [deskTool(), visionTool()],
 
-  schema: {
-    types: schemaTypes,
-  },
-})
+//   schema: {
+//     types: schemaTypes,
+//   },
+// })

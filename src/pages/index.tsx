@@ -23,12 +23,20 @@ export default function Home() {
           name='description'
           content='Neutram Geomatic Engineering is a Land Surveying firm based in Uganda'
         />
+        <meta name="keywords" content="Neutram, Geomatic, Engineering" />
       </Head>
       <HomeSection />
       <MissionVision />
       <AboutUsSection />
       <Services />
-      <InfoSection />
+      <InfoSection
+        title='we are a team'
+        text='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aut perspiciatis hic error obcaecati ex officiis, vitae numquam id modi, nemo autem sed doloribus veritatis fuga cupiditate. Tempora officia possimus nobis incidunt enim velit laborum doloribus libero fugit ducimus similique suscipit, laboriosam, eaque eum aperiam impedit illum voluptates perferendis adipisci?'
+        btnName='See More'
+        btnLink=''
+        textColor=''
+        btnBorderColor='#2269e9'
+      />
 
       {/* <CoreValues /> */}
       <Projects />

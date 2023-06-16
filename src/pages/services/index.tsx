@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import PageHeader from '@/components/PageHeader'
+import Services from '@/components/Services'
 
 const services = () => {
   return (
@@ -11,8 +13,12 @@ const services = () => {
           name='description'
           content='Neutram Geomatic Engineering is a Land Surveying firm based in Uganda'
         />
+        <meta name="keywords" content="Neutram, Geomatic, Engineering, Services" />
       </Head>
-      <div>services</div>
+      <div className=''>
+        <PageHeader title='services' bg={'construction-1.webp'}/>
+        <Services />
+      </div>
     </>
   )
 }

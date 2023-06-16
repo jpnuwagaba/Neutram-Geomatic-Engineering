@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <div className='font-manrope'>
         <Navbar />
-        <div className=''><Component {...pageProps} /></div>
+        <div className='min-h-screen'><Component {...pageProps} /></div>
         <div className='py-6 bg-gray-100 text-themeBlue w-full'>
           <div className='container'><Footer /></div>
         </div>

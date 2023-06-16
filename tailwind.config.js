@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'manrope': ["'Manrope', sans-serif"]
+        'manrope': ["'Manrope', sans-serif"],
+        'league-spartan': ["'League Spartan', sans-serif"]
       },
       colors: {
         themeBlue: '#2269e9',

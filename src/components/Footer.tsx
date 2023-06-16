@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="font-bold">&copy; Neutram Geomatic Engineering</div>
         <div className="flex flex-col items-center lg:flex-row gap-5">
           <Link href={'/'}>Home</Link>
-          <Link href={'aboutUs'}>About Us</Link>
-          <Link href={'services'}>Services</Link>
-          <Link href={'jobBoard'}>Job Board</Link>
+          <Link href={'about'}>About</Link>
+          <Link href={'careers'}>Services</Link>
+          <Link href={'jobBoard'}>Careers</Link>
           <Link href={'contact'}>Contact</Link>
         </div>
         <div>All Rights Reserved | 2023</div>

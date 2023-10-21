@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 export type ServiceType = {
   title: string;
-  description: string;
+  description: Array<any>;
   slug: string;
   imageUrl: any;
   imageUrl2: any;

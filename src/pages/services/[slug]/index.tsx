@@ -63,14 +63,12 @@ const service = () => {
           </Head>
           <div>
             <PageHeader title={service[0].title} bg={service[0].imageUrl} />
-            <div className="container-60 my-8 md:my-16">
-              <div className="flex flex-col gap-4">
-                <p className="text-lg text-justify">
-                  <PortableText
-                    value={service[0].description}
-                  />
-                </p>
-              </div>
+            <div className="flex flex-col gap-4">
+              <p className="my-8 md:my-16 text-lg text-justify">
+                <div className="container lg:container-60">
+                  <PortableText value={service[0].description} />
+                </div>
+              </p>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const contact = () => {
         <meta name="keywords" content="Neutram, Geomatic, Engineering, Contact" />
       </Head>
       <div className=''>
-        <PageHeader title='contact us' bg={'about.avif'}/>
+        <PageHeader title='contact us' bg={'assets/about.avif'}/>
       </div>
     </>
   )

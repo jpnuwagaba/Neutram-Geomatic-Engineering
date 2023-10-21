@@ -9,7 +9,7 @@ interface props {
 const PageHeaderTwo = ({title, text, image}: props) => {
   return (
     <>
-      <div className="flex flex-col justify-between py-16 lg:py-24 lg:flex-row">
+      <div className="flex flex-col justify-between my-16 lg:my-24 lg:flex-row">
         <div className="text-3xl font-bold mb-6 lg:w-[40%]">{title}</div>
         <div className='text-lg lg:w-[70%]'>{text}</div>
       </div>

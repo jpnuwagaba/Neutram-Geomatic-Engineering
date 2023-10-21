@@ -1,0 +1,9 @@
+{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <Service service={"Architecture"} image={'architecture.svg'} link={""} />
+            <Service service={"Surveying"} image={'civil-engineering.svg'} link={""} />
+            <Service service={"Civil Engineering"} image={'engineering-helmet.svg'} link={""} />
+            <Service service={"Project Planning & Management"} image={'project.svg'} link={""} />
+            <Service service={"Quantity Surveying & Cost Estimations"} image={'product-quantity.svg'} link={""} />
+            <Service service={"Real Estate"} image={'real-estate.svg'} link={""} />
+            <Service service={"Property Valuation"} image={'bar-chart.svg'} link={""} />
+          </div> */}

@@ -1,15 +1,20 @@
-// import {defineConfig} from 'sanity';
-// import {deskTool} from 'sanity/desk';
-// import schemas from './neutram-studio/schemas';
+import {defineConfig} from 'sanity'
+import {deskTool} from 'sanity/desk'
+import {visionTool} from '@sanity/vision'
+import {schemaTypes} from './schemas'
 
-// const config = defineConfig({
-//   projectId: '8y0fvn0w',
-//   dataset: 'production',
-//   title: 'Neutram Geomatic Engineering Website',
-//   apiVersion: '2023-05-06',
-//   basePath: '/admin',
-//   plugins: [deskTool()],
-//   schema: {types: schemas}
-// })
+export default defineConfig({
+  name: 'default',
+  title: 'NGE CMS',
 
-// export default config
+  projectId: 's2krfowt',
+  dataset: 'production',
+
+  basePath: "/studio",
+
+  plugins: [deskTool(), visionTool()],
+
+  schema: {
+    types: schemaTypes,
+  },
+})

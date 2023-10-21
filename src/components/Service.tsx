@@ -1,24 +1,26 @@
-import Link from 'next/link'
-import React from 'react'
-import {MdOutlineConstruction} from 'react-icons/md'
-import { JsxElement } from 'typescript'
+import Link from "next/link";
+import React from "react";
+import { MdOutlineConstruction } from "react-icons/md";
+import { JsxElement } from "typescript";
 
 interface props {
-  service: string,
-  // icon: any,
-  image: any,
+  service: string;
+  icon: any;
+  link: string
 }
 
-const Service = ({service, image}: props) => {
+const Service = ({ service, icon, link }: props) => {
   return (
     <>
-      <Link href={''} className="rounded-md p-5 lg:p-8 flex flex-row gap-5 items-center bg-gray-100 hover:bg-gray-200 cursor-pointer hover:translate-y-[-3px] transition ease-in-out ">
-        {/* <div>{icon}</div> */}
-        <img className='w-12' src={image} alt="" srcSet="" />
-        <div className='text-themeBlue font-bold text-xl'>{service}</div>
+      <Link
+        className="rounded p-4 bg-white flex flex-row items-center gap-4 hover:drop-shadow-lg min-h-[80px]"
+        href={`/${link}`}
+      >
+        <img className="w-8" src={icon} alt="" />
+        <div className="text-sm">{service}</div>
       </Link>
     </>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

@@ -1,36 +1,57 @@
-import Link from 'next/link'
-import React from 'react'
-import {BsArrowRight} from 'react-icons/bs'
+import Link from "next/link";
+import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 interface props {
-  title: string,
-  text: string,
-  btnName: string,
-  btnLink: string,
-  textColor: string,
-  btnBorderColor: string,
+  title: string;
+  text: string;
+  tag: string;
+  btnName: string;
+  btnLink: string;
+  textColor: string;
+  btnBorderColor: string;
+  bgImage: any;
+  bgColor: string;
 }
 
-const InfoSection = ({title, text, btnName, btnLink, textColor, btnBorderColor}: props) => {
+const InfoSection = ({
+  title,
+  text,
+  tag,
+  btnName,
+  btnLink,
+  textColor,
+  btnBorderColor,
+  bgImage,
+  bgColor,
+}: props) => {
   return (
     <>
-      <div className='py-6 lg:py-32'>
-        <div className="container">
-          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-10 gap-6 md:gap-16'>
-            <div style={{color: `${textColor}`}} className='xl:col-span-6'>
-              <div className=" font-bold uppercase my-3">{title}</div>
-              <div className="text-lg  text-justify">{text}</div>
-              <Link style={{borderColor: `${btnBorderColor}`}} className="font-bold rounded-full px-6 py-2 my-6 border-2 border flex items-center gap-3 w-max hover:gap-5 ease-in-out duration-300" href={btnLink}>
-                <div className='uppercase'>{btnName}</div>
-                <BsArrowRight size={'1.5rem'}/>
-              </Link>
-            </div>
-            <div className='xl:col-span-4'><img className='rounded-xl' src="/assets/construction-1.webp" alt="" /></div>
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8 py-8 md:py-24">
+        <div>
+          <div className="text-sm font-bold text-gray-700 uppercase">
+            {title}
           </div>
+          <div className="font-bold text-3xl my-4">{tag}</div>
+          <div className="text-gray-700 mb-5">{text}</div>
+          <Link
+            className="bg-themeBlue text-sm font-bold uppercase text-white px-2 py-1 rounded"
+            href={btnLink}
+          >
+            {btnName}
+          </Link>
         </div>
+        <div
+          style={{
+            background: `url(/assets/${bgImage})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+          className="rounded min-h-[50vh] md:min-h-[70vh]"
+        ></div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default InfoSection
+export default InfoSection;

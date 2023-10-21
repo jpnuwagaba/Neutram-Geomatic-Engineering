@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 
   return (
     <a href='#' style={{ display: showScrollToTopButton ? 'block' : 'none' }} className='fixed bottom-10 right-10 shadow transition rounded-full bg-white'>
-      <BsFillArrowUpCircleFill size={'3rem'} color='#2269e9'/>
+      <BsFillArrowUpCircleFill size={'2.5rem'} color='#2269e9'/>
     </a>
   )
 }

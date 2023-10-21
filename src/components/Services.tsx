@@ -1,28 +1,78 @@
-import React from 'react'
-import Service from './Service'
-import {SiOpenstreetmap} from 'react-icons/si'
-import {MdArchitecture, MdOutlineEngineering, MdOutlinePriceChange} from 'react-icons/md'
-import {AiOutlineProject} from 'react-icons/ai'
-import {BiBuildings} from 'react-icons/bi'
-import {TbZoomMoney} from 'react-icons/tb'
+import React, { useEffect, useState } from "react";
+import Service from "./Service";
+export type ServiceType = {
+  title: string;
+  description: string;
+  slug: string;
+  imageUrl: any;
+  imageUrl2: any;
+};
+import client from "../../sanity/sanity.client";
 
 const Services = () => {
+  const [services, setServices] = useState<ServiceType[]>([]);
+  const query = `*[_type == 'service']{
+    _id,
+    title,
+    description,
+    slug,
+    "imageUrl": image.asset->url,
+    "imageUrl2": icon.asset->url,
+  }`;
+
+  const servicesClient = async () => {
+    await client
+      .fetch(query)
+      .then((result) => {
+        setServices(result);
+        console.log(result);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
+
+  useEffect(() => {
+    servicesClient();
+  }, []);
+
   return (
     <>
-      <div className="container flex flex-col py-16 gap-6 items-center ">
-        <div className="text-gray-700 font-bold text-3xl">Our Services</div>
-        <div className="grid md:grid-cols-2 gap-3">
-          <Service service={'Surveying'} image={'assets/civil-engineering.svg'} />
-          <Service service={'Civil Engineering'} image={'assets/engineering-helmet.svg'} />
-          <Service service={'Architecture'} image={'assets/architecture.svg'} />
-          <Service service={'Project Planning and Management'} image={'assets/project.svg'} />
-          <Service service={'Real Estate'} image={'assets/real-estate.svg'} />
-          <Service service={'Property Valuation'} image={'assets/bar-chart.svg'} />
-          <Service service={'Quantity Surveying and Cost Planning'} image={'assets/product-quantity.svg'}/>
+      <div className="bg-sky-50 py-8 md:py-24">
+        <div className="container">
+          <div className="flex flex-row items-center justify-between mb-3 md:mb-6">
+            <div className="font-bold text-2xl text-themeBlue">
+              Explore our services
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {services &&
+              services.map((service, index) => (
+                <div key={index}>
+                  <Service
+                    service={service.title}
+                    icon={service.imageUrl2}
+                    link={`/services/${(service.slug as any).current}`}
+                  />
+                </div>
+              ))}
+          </div>
+          <div className="text-sm mt-5 md:mt-12">
+            Neutram Geomatic Engineering is dedicated to providing comprehensive
+            and tailored solutions that align with your unique project
+            requirements and objectives. Contact us today to explore how our
+            expertise can contribute to the success of your construction,
+            surveying, engineering, or real estate venture.
+          </div>
+          <div>
+            <button className="bg-themeBlue text-white px-4 py-2 rounded-md mt-5">
+              Contact Us
+            </button>
+          </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

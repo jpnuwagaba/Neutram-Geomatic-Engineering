@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link href={'/careers'}>Careers</Link>
             <Link href={'/contact'}>Contact</Link>
           </div>
-          <Link href={''} className="hidden text-sm rounded-md bg-themeBlue px-3 py-2 text-white lg:block">sample@gmail.com</Link>
+          <Link href={''} className="hidden text-sm rounded-md bg-sky-50 px-3 py-2 font-bold text-themeBlue lg:block">sample@gmail.com</Link>
           <div onClick={() => setShowMenu(!showMenu)} className='lg:hidden'>{showMenu ? <AiOutlineMenu size={'1.5rem'} color='#2269e9' /> : <AiOutlineClose size={'1.5rem'} color='#2269e9' />}</div>
         </div>
       </div>

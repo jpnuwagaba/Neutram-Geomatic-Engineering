@@ -1,30 +1,34 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 interface props {
-  name: string,
-  role: string,
-  image: any
+  name: string;
+  role: string;
+  link: string;
+  image: any;
 }
 
-const TeamMember = ({ name, role, image }: props) => {
+const TeamMember = ({ name, role, image, link }: props) => {
   return (
-    <div className='bg-gray-200 drop-shadow-lg rounded-lg'>
-      <div className="grid grid-cols-1 items-center">
-        <div
-          style={{
-            backgroundImage: `url(/assets/${image})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-          }}
-          className="aspect-square rounded-t-lg"></div>
-        <div className='text-center py-5'>
-          <div className='font-bold'>{name}</div>
-          <div className="text-sm">{role}</div>
+    <>
+      <Link href={link}
+        style={{
+          background: `url(/assets/${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="aspect-square relative"
+      >
+        <div className="absolute z-50 bottom-0 left-0 w-full bg-white py-3 text-center">
+          <div className="flex flex-col items-center gap-1">
+            <div className="font-bold text-themeBlue">{name}</div>
+            <div className="text-xs">{role}</div>
+          </div>
         </div>
-      </div>
-    </div>
-  )
-}
+        <div className="absolute z-10 top-0 left-0 w-full h-full bg-themeBlue/0 hover:bg-themeBlue/25 transition ease-in-out duration-500"></div>
+      </Link>
+    </>
+  );
+};
 
-export default TeamMember
+export default TeamMember;

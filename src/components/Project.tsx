@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 interface props {
-  name?: string;
-  category?: string;
-  location?: string;
-  text?: string;
-  image?: any;
+  name: string;
+  category: string;
+  location: string;
+  text: string;
+  image: any;
   link: string;
 }
 
@@ -16,7 +16,7 @@ const Project = ({ name, category, text, location, image, link }: props) => {
       <Link href={link}>
         <div
           style={{
-            background: `url(/assets/${image})`,
+            background: `url(${image})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}

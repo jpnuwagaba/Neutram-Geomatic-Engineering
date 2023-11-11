@@ -1,7 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { MdOutlineConstruction } from "react-icons/md";
-import { JsxElement } from "typescript";
 
 interface props {
   service: string;

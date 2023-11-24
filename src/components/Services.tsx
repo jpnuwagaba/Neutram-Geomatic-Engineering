@@ -8,6 +8,7 @@ export type ServiceType = {
   imageUrl2: any;
 };
 import client from "../../sanity/sanity.client";
+import Link from "next/link";
 
 const Services = () => {
   const [services, setServices] = useState<ServiceType[]>([]);
@@ -65,9 +66,12 @@ const Services = () => {
             surveying, engineering, or real estate venture.
           </div>
           <div>
-            <button className="bg-themeBlue text-white px-4 py-2 rounded-md mt-5">
-              Contact Us
-            </button>
+            <Link
+              className="float-left mt-5 bg-themeBlue text-sm font-bold uppercase text-white px-2 py-1 rounded"
+              href={"#contact"}
+            >
+              contact us
+            </Link>
           </div>
         </div>
       </div>

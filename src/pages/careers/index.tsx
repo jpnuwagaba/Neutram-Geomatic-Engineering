@@ -30,26 +30,32 @@ const careers = () => {
               <TopicCard
                 image="culture.webp"
                 topic="Culture"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eos natus molestiae iusto omnis numquam."
+                text="At Neutrum Geomatic Eng Ltd., we foster a culture of innovation, collaboration, and continuous learning. We value open communication, respect for diverse perspectives, and a strong work ethic. Our culture is rooted in integrity, professionalism, and a commitment to delivering excellence in all aspects of our work."
                 link="/careers/culture"
               />
               <TopicCard
-                image="diversity.jpg"
+                image="diversity-pencils.avif"
                 topic="Diversity and Inclusivity"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eos natus molestiae iusto omnis numquam."
+                text="At Neutrum, we promote an environment that values and respects different backgrounds, experiences and perspectives. We aim to create a more vibrant and dynamic industry because we believe that a diverse and inclusive workforce enhances creativity, innovation and problem-solving capabilities."
                 link="/careers/diversity"
               />
               <TopicCard
                 image="jobs.jpg"
                 topic="Jobs"
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eos natus molestiae iusto omnis numquam."
+                text="Visit our Jobs page to find out more about current openings and how you can join Neutrum Geomatic Eng Ltd. in shaping the future of geomatic engineering"
                 link="/careers/jobs"
+              />
+              <TopicCard
+                image="jobs.jpg"
+                topic="Expertise and Specializations"
+                text="At Neutrum Geomatic Engineering Ltd, our team boasts diverse expertise in the built environment, covering surveying, civil engineering, architecture, project planning, real estate, quantity surveying, and more. By leveraging cutting-edge technology and sustainable practices, we deliver innovative solutions that transform dreams into reality and positively impact communities worldwide"
+                link="/careers/expertise"
               />
             </div>
           </div>
           <InfoSection
             title="the onboarding process"
-            text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aut perspiciatis hic error obcaecati ex officiis, vitae numquam id modi, nemo autem sed doloribus veritatis fuga cupiditate. Tempora officia possimus nobis incidunt enim velit laborum doloribus libero fugit ducimus similique suscipit, laboriosam, eaque eum aperiam impedit illum voluptates perferendis adipisci?"
+            text="Our onboarding process is designed to ensure a seamless transition as you embark on this exciting journey with us. During your onboarding, you'll have the opportunity to familiarize yourself with our company culture, mission, and values. We'll provide you with the necessary tools, resources, and support to thrive in your role. Our team is here to guide you through every step, helping you integrate smoothly into the Neutram family. Your success is our priority, and we look forward to witnessing the unique contributions you'll bring to our innovative and dynamic workplace. Let's build the future of geomatic engineering together!"
             btnName="See More"
             btnLink="/careers/onboarding"
             textColor=""

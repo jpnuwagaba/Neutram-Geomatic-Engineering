@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link href={'/careers'}>Careers</Link>
             {/* <Link href={'/contact'}>Contact</Link> */}
           </div>
-          <Link href={''} className="hidden text-sm rounded-md bg-sky-100 px-3 py-2 font-bold text-themeBlue lg:block">sample@gmail.com</Link>
+          <Link href={''} className="hidden text-sm rounded-md bg-sky-100 px-3 py-2 font-bold text-themeBlue lg:block">info@neutrumgeomatics.com</Link>
           <div onClick={() => setShowMenu(!showMenu)} className='lg:hidden'>{showMenu ? <AiOutlineMenu size={'1.5rem'} color='#2269e9' /> : <AiOutlineClose size={'1.5rem'} color='#2269e9' />}</div>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link onClick={() => setShowMenu(!showMenu)} href={'projects'}>Projects</Link>
           <Link onClick={() => setShowMenu(!showMenu)} href={'careers'}>Careers</Link>
           {/* <Link onClick={() => setShowMenu(!showMenu)} href={'contact'}>Contact</Link> */}
-          <Link onClick={() => setShowMenu(!showMenu)} href={''} className="text-sm rounded-md bg-sky-100 font-bold text-themeBlue px-3 py-2 lg:block">sample@gmail.com</Link>
+          <Link onClick={() => setShowMenu(!showMenu)} href={''} className="text-sm rounded-md bg-sky-100 font-bold text-themeBlue px-3 py-2 lg:block">info@neutrumgeomatics.com</Link>
         </div>
       </div>
     </>

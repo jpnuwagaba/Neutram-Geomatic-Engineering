@@ -18,7 +18,7 @@ const index = () => {
         <div className="container">
         <SectionHeader 
             title='Jobs'
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus nostrum harum distinctio, quibusdam debitis quae vel. Recusandae eum nihil fugit magnam doloribus omnis praesentium, id impedit debitis tempora! Vitae voluptates quasi dolor corporis quam asperiores similique, fugiat impedit eveniet.'
+            text='Visit our Jobs page to find out more about current openings and how you can join Neutrum Geomatic Eng Ltd. in shaping the future of geomatic engineering '
             image={'jobs.jpg'}
           />
         </div>

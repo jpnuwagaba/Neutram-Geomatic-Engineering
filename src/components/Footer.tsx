@@ -3,6 +3,9 @@ import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import Location from "./Location";
 
 const Footer = () => {
@@ -27,6 +30,15 @@ const Footer = () => {
             <Link href={""}>
               <FaInstagram size={"1.2rem"} />
             </Link>
+            <Link href={""}>
+              <FaLinkedinIn size={"1.2rem"} />
+            </Link>
+            <Link href={""}>
+              <FaTiktok size={"1.2rem"} />
+            </Link>
+            <Link href={""}>
+              <FaWhatsapp size={"1.2rem"} />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-start gap-3">
@@ -38,14 +50,19 @@ const Footer = () => {
           {/* <Link href={'contact'}>Contact</Link> */}
         </div>
         <div className="flex flex-col gap-4 w-max">
-          <div className="rounded font-bold bg-themeBlue text-white py-2 px-4">
-            (+256) 785 701 457
+          <div className="rounded bg-themeBlue text-center text-white py-2 px-4">
+            <div className="font-bold">Our Contacts</div>
+            <div className="flex flex-col text-sm gap-1">
+              <div>(+256) 785 701 457</div>
+              <div>(+256) 750 656 426</div>
+              <div>(+256) 702 489 486</div>
+            </div>
           </div>
           <Link
             href={""}
             className="rounded font-bold bg-themeBlue text-white py-2 px-4"
           >
-            sample@mail.com
+            info@neutrumgeomatics.com
           </Link>
         </div>
       </div>

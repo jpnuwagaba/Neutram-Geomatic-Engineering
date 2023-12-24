@@ -23,7 +23,7 @@ const Team = () => {
             <TeamMember
               name={"Moses Lukenge"}
               role={"Co-Founder and Visionary"}
-              image={"lukenge.png"}
+              image={"lukenge.jpg"}
               link={""}
             />
           </div>

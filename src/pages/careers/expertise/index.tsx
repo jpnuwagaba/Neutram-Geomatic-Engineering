@@ -6,7 +6,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Diversity and Inclusivity | Neutram Geomatic Engineering</title>
+        <title>Expertise and Specialization | Neutram Geomatic Engineering</title>
         <link rel="icon" href="/neutram-icon.svg" />
         <meta
           name="description"
@@ -17,9 +17,9 @@ const index = () => {
       <div>
         <div className="container">
           <SectionHeader
-            title="Diversity and Inclusivity"
-            text="At Neutrum, we promote an environment that values and respects different backgrounds, experiences and perspectives. We aim to create a more vibrant and dynamic industry because we believe that a diverse and inclusive workforce enhances creativity, innovation and problem-solving capabilities."
-            image={"diversity.jpg"}
+            title="Expertise and Specialization"
+            text="At Neutrum Geomatic Engineering Ltd, our team boasts diverse expertise in the built environment, covering surveying, civil engineering, architecture, project planning, real estate, quantity surveying, and more. By leveraging cutting-edge technology and sustainable practices, we deliver innovative solutions that transform dreams into reality and positively impact communities worldwide."
+            image={"jobs.jpg"}
           />
         </div>
       </div>

@@ -24,7 +24,9 @@ const TopicCard = ({ image, topic, text, link }: props) => {
           ></div>
           <div className="p-6">
             <div className="text-lg font-bold">{topic}</div>
-            <div>{text}</div>
+            <div>{text.slice(0, 90)}...
+              <div className="text-sm text-themeBlue underline">see more</div>
+            </div>
           </div>
         </div>
       </Link>

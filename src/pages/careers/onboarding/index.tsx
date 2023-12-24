@@ -18,7 +18,7 @@ const index = () => {
         <div className="container">
         <SectionHeader 
             title='Onboarding Process'
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus nostrum harum distinctio, quibusdam debitis quae vel. Recusandae eum nihil fugit magnam doloribus omnis praesentium, id impedit debitis tempora! Vitae voluptates quasi dolor corporis quam asperiores similique, fugiat impedit eveniet.'
+            text="Our onboarding process is designed to ensure a seamless transition as you embark on this exciting journey with us. During your onboarding, you'll have the opportunity to familiarize yourself with our company culture, mission, and values. We'll provide you with the necessary tools, resources, and support to thrive in your role. Our team is here to guide you through every step, helping you integrate smoothly into the Neutram family. Your success is our priority, and we look forward to witnessing the unique contributions you'll bring to our innovative and dynamic workplace. Let's build the future of geomatic engineering together!"
             image={'culture.webp'}
           />
         </div>

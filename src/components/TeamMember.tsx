@@ -17,9 +17,9 @@ const TeamMember = ({ name, role, image, link }: props) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="aspect-square relative"
+        className="aspect-square rounded relative"
       >
-        <div className="absolute z-50 bottom-0 left-0 w-full bg-white py-3 text-center">
+        <div className="absolute rounded-b z-50 bottom-0 left-0 w-full bg-white py-3 text-center">
           <div className="flex flex-col items-center gap-1">
             <div className="font-bold text-themeBlue">{name}</div>
             <div className="text-xs">{role}</div>

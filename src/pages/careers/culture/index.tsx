@@ -18,7 +18,7 @@ const index = () => {
         <div className="container">
           <SectionHeader 
             title='Culture'
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus nostrum harum distinctio, quibusdam debitis quae vel. Recusandae eum nihil fugit magnam doloribus omnis praesentium, id impedit debitis tempora! Vitae voluptates quasi dolor corporis quam asperiores similique, fugiat impedit eveniet.'
+            text='At Neutrum Geomatic Eng Ltd., we foster a culture of innovation, collaboration, and continuous learning. We value open communication, respect for diverse perspectives, and a strong work ethic. Our culture is rooted in integrity, professionalism, and a commitment to delivering excellence in all aspects of our work.'
             image={'culture.webp'}
           />
         </div>
